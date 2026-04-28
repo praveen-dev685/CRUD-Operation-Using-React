@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(245, 90, 73);
+    flex-direction: column;
+    padding-top: 100px;
+}
+.search-box > input{
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(30, 74, 196);
+    outline: none;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+thead > tr > td{
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 1rem;
+    font-weight: bold;
+}
+tbody > tr > td{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+}
+tbody > tr > td > button{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+tbody > tr > td > button:nth-child(1){
+    background-color: yellow;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.addbtn{
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.popup{
+    position: absolute;
+    left: 35%;
+    height: 310px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    top: 25%;
+    padding: 10px;
+    animation: opener 0.7s linear forwards;
+    scale: 0.5;
+    transition: 0.3s linear all;
+}
+@keyframes opener{
+    to{
+        scale: 1;
+    }
+}
+.input-div > label{
+    display: block;
+    margin: 5px 0;
+}
+.input-div > input{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.popup > button{
+    margin: 10px 70px;
+    width: 200px;
+    padding: 5px;
+    background-color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(42, 22, 226);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
